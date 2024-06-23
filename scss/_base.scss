@@ -1,0 +1,93 @@
+@import 'variables';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font: inherit;
+}
+
+::after,
+::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family-raleway);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.container {
+  display: grid;
+  margin: 0px auto;
+  max-width: var(--container-width);
+}
+
+.section--with-bg {
+  position: relative;
+}
+
+.skills {
+  padding-bottom: 35rem;
+}
+
+.section--with-bg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100%;
+  color: var(--color-black);
+  z-index: -1;
+  background-image: var(--color-background-gradient-whit-light);
+}
+
+.section2--with-bg {
+  position: relative;
+}
+
+.section2--with-bg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100%;
+  color: var(--color-black);
+  z-index: -1;
+  background-image: var(--color-background-gradient-whit-dark);
+}
+
+.small-padding {
+  padding: 11rem 0;
+}
+.large-padding {
+  padding: 11rem 0 35rem 0;
+}
+.h2-heading {
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 8.7rem;
+  text-transform: uppercase;
+}
+

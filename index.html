@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/my_profile/style/style.css"> -->
+   <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>Mohamed khaled</title>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <video class="video-loop" autoplay loop muted>
+      <source src="videos/vedio-loop-2.mp4" type="video/mp4" />
+    </video>
+
+    <header class="header">
+      <label for="menu" class="burger-menu">
+        <div class="burger-menu__bar"></div>
+        <div class="burger-menu__bar"></div>
+        <div class="burger-menu__bar"></div>
+      </label>
+
+      <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li><a class="navigation__link navigation__bio" href="#bio">Bio</a></li>
+          <li><a class="navigation__link navigation__skills" href="#skills">Skills</a></li>
+          <li><a class="navigation__link navigation__media" href="#media">Media</a></li>
+          <li><a class="navigation__link navigation__testimonial" href="#testimonial">My Clients</a></li>
+          <li><a class="navigation__link navigation__projects" href="#projects">Projects</a></li>
+          <li><a class="navigation__link navigation__contact-us" href="#contact-us">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="toggle">
+        <h3 class="toggle__title">Switch Theme</h3>
+        <input class="toggle__checkbox" id="toggle" type="checkbox" name="" id="">
+        <label class="toggle__label" for="toggle"></label>
+      </div>
+    </header>
+
+    <section id="bio" class="bio section section--with-bg small-padding">
+
+      <div class="bio__data">
+        <h1 class="bio__heading">Hi There, I’M A Passionate Frontend Development</h1>
+        <p class="bio__objective">
+          My name is
+          <span class="bio__name ">Mohamed Khaled</span>.
+          I am a student learning Frontend Development at <a class="bio__almdrasa"
+            href="https://www.almdrasa.com/">Almdrasa</a> platform.
+
+          You can find my work and follow me on
+
+
+          <a class="bio__github" href="https://github.com/Mohamed-khaled-mohmamed/Mohamed-khaled-mohamed">GitHub</a> and
+          <a class="bio__linkedin" href="https://www.linkedin.com/in/mohamed-khaled-full-stack/">LinkedIn</a>.
+        </p>
+        <a class="bio__links say-hi-link" href="#contact-us">Say Hi</a>
+        <a class="bio__links find-out-link" href="https://drive.google.com/file/d/1-VIOJ_VdgYQipyU8rIRPAOKOgHoXPXQi/view">
+          Download CV <span class="bio__arrow">↓</span>
+        </a>
+      </div>
+
+
+
+
+      <div class="bio__pic-content">
+        <img class="bio__pic" src="imgs/mo__persoal (5).png" alt="personal pic of Mohamed khaled" />
+      </div>
+
+
+
+
+    </section>
+
+    <section id="skills" class="skills section2--with-bg large-padding">
+      <h2 class="h2-heading">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__column ">
+          <h2 class="skills__title">HTML</h2>
+          <span class="skills__years">8 years</span>
+        </li>
+        <li class="skills__column ">
+          <h2 class="skills__title">CSS</h2>
+          <span class="skills__years">8 years</span>
+        </li>
+        <li class="skills__column ">
+          <h2 class="skills__title">Javascript</h2>
+          <span class="skills__years">8 years</span>
+        </li>
+        <li class="skills__column ">
+          <h2 class="skills__title">React</h2>
+          <span class="skills__years">4 years</span>
+        </li>
+        <li class="skills__column ">
+          <h2 class="skills__title">Redux</h2>
+          <span class="skills__years">3 years</span>
+        </li>
+        <li class="skills__column ">
+          <h2 class="skills__title"> testing </h2>
+          <span class="skills__years">1 year</span>
+        </li>
+      </ul>
+
+    </section>
+
+
+    <section id="media" class="media section--with-bg small-padding">
+      <div class="media__page">
+        <video class="media__video" controls poster="imgs/poster-all.png">
+          <source src="videos/My_coding_journey.mp4">
+        </video>
+      </div>
+    </section>
+
+
+    <section class="testimonial section2--with-bg small-padding " id="testimonial">
+      <h2 class="h2-heading">
+        What clients say
+      </h2>
+      <div class="testimonial__card-container">
+        <input type="radio" class="testimonial__radio testimonial__radio--1" id="testimonial__radio--1" name="arrow">
+        <label class="testimonial__label testimonial__label--1" for="testimonial__radio--1"></label>
+        <input type="radio" class="testimonial__radio testimonial__radio--2" id="testimonial__radio--2" name="arrow"
+          checked>
+        <label class="testimonial__label testimonial__label--2" for="testimonial__radio--2"></label>
+        <input type="radio" class="testimonial__radio testimonial__radio--3" id="testimonial__radio--3" name="arrow">
+        <label class="testimonial__label testimonial__label--3" for="testimonial__radio--3"></label>
+        <span class="testimonial__move-label"></span>
+        <div class="testimonial__card testimonial__card--1">
+          <div class="testimonial__image-container">
+            <img src="imgs/clint-1 (1).png" alt="client face" class="testimonial__image">
+          </div>
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonial__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi nihil, placeat sint error magni veritatis
+            earum iusto cum quae, reiciendis corrupti! Iusto, quidem expedita accusantium blanditiis asperiores optio
+            sed!
+          </p>
+          <i class="fa-solid fa-quote-right testimonial__quote"></i>
+        </div>
+        <div class="testimonial__card testimonial__card--2">
+          <div class="testimonial__image-container">
+            <img src="imgs/clint-2.png" alt="client face" class="testimonial__image">
+          </div>
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi nihil, placeat sint error magni veritatis
+            earum iusto cum quae, reiciendis corrupti! Iusto, quidem expedita accusantium blanditiis asperiores optio
+            sed!
+          </p>
+          <i class="fa-solid fa-quote-right testimonial__quote"></i>
+        </div>
+        <div class="testimonial__card testimonial__card--3">
+          <div class="testimonial__image-container">
+            <img src="imgs/clint-3.png" alt="client face" class="testimonial__image">
+          </div>
+          <div class="testimonial__stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="testimonial__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sequi nihil, placeat sint error magni veritatis
+            earum iusto cum quae, reiciendis corrupti! Iusto, quidem expedita accusantium blanditiis asperiores optio
+            sed!
+          </p>
+          <i class="fa-solid fa-quote-right testimonial__quote"></i>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="projects section--with-bg small-padding" id="projects">
+      <h2 class="h2-heading">
+        project i work on
+      </h2>
+
+      <div class="projects--container">
+        <div class="projects--item">
+          <div class="projects--image-container">
+            <a href="https://github.com/Mohamed-khaled-mohmamed/x-o-game" target="_blank" class="contact-info__link">
+              <img src="imgs/5.png" alt="" class="projects--image">
+            </a>
+          </div>
+          <h3 class="projects--h3"> crazy tec tac toe </h3>
+          <p class="projects--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, magnam?</p>
+        </div>
+
+        <div class="projects--item">
+          <div class="projects--image-container">
+            <a href="pages/in_progress.html" target="_blank" class="contact-info__link">
+              <img src="imgs/Face_Detection.png" alt="" class="projects--image">
+            </a>
+          </div>
+          <h3 class="projects--h3"> Face_Detection </h3>
+          <p class="projects--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, magnam?</p>
+        </div>
+
+        <div class="projects--item">
+          <div class="projects--image-container">
+            <a href="pages/in_progress.html" target="_blank" class="contact-info__link">
+              <img src="imgs/ecommerce_store.png" alt="" class="projects--image">
+            </a>
+          </div>
+          <h3 class="projects--h3"> Ecommerce_store </h3>
+          <p class="projects--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, magnam?</p>
+        </div>
+
+        <div class="projects--item">
+          <div class="projects--image-container">
+            <a href="pages/in_progress.html" target="_blank" class="contact-info__link">
+              <img src="imgs/Chat application.png" alt="" class="projects--image">
+            </a>
+          </div>
+          <h3 class="projects--h3"> Chat application </h3>
+          <p class="projects--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, magnam?</p>
+        </div>
+
+
+        <div class="projects--item">
+          <div class="projects--image-container">
+            <a href="pages/in_progress.html" target="_blank" class="contact-info__link">
+              <img src="imgs/Voting_System.png" alt="" class="projects--image">
+            </a>
+          </div>
+          <h3 class="projects--h3"> Blockchain-Based Voting System </h3>
+          <p class="projects--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, magnam?</p>
+        </div>
+
+        <div class="projects--item">
+          <div class="projects--image-container">
+            <a href="pages/in_progress.html" target="_blank" class="contact-info__link">
+              <img src="imgs/To-Do-List.png" alt="" class="projects--image">
+            </a>
+          </div>
+          <h3 class="projects--h3"> Interactive To-Do List </h3>
+          <p class="projects--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, magnam?</p>
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+    <section class="contact-us section section2--with-bg  small-padding" id="contact-us">
+      <h2 class="h2-heading">LET’S WORK TOGETHER!</h2>
+      <div class="contact-us__information">
+
+        <div class="contact-info">
+          <!-- <h2 class="">LET’S WORK TOGETHER!</h2> -->
+          <div class="contact-info__item">
+            <a href="https://www.google.com/maps/place/West+Nubariyah,+Beheira+Governorate/@30.7633889,29.758735,10z/data=!4m13!1m6!2m5!1sHotels!5m2!4e9!11e1!6e3!3m5!1s0x145f515617aee80d:0xe045cf1ee9e9b4b!8m2!3d30.6988612!4d30.112735!16s%2Fg%2F11hdy2tdkt?entry=ttu"
+              target="_blank" class="contact-info__link">
+              <i class="fa fa-map-marker contact-info__icon "></i>
+
+
+            </a>
+          </div>
+          <div class="contact-info__item">
+            <a href="tel:+11111111111" class="contact-info__link ">
+              <i class="fa fa-phone contact-info__icon "></i>
+            </a>
+          </div>
+          <div class="contact-info__item">
+            <a href="mailto:moh27632190@gmail.com" class="contact-info__link">
+              <i class="fa fa-envelope contact-info__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-us__form ">
+          <form action="mailto:moh27632190@gmail.com" method="post" enctype="" class="contact-form__form">
+            <div class="contact-form__field">
+              <label for="name" class="contact-form__label">Name:</label>
+              <input type="text" id="name" name="name" class="contact-form__input" required>
+            </div>
+            <div class="contact-form__field">
+              <label for="email" class="contact-form__label">Email:</label>
+              <input type="email" id="email" name="email" class="contact-form__input" required>
+            </div>
+            <div class="contact-form__field">
+              <label for="message" class="contact-form__label">Message:</label>
+              <textarea id="message" name="message" class="contact-form__textarea" required></textarea>
+            </div>
+            <button type="submit" class="contact-form__button">Send Message</button>
+            <div class="contact-us__links">
+
+              <a href="https://www.linkedin.com/in/mohamed-khaled-full-stack/" class="contact-info__link ">
+                <i class="fa-brands fa-linkedin fa-2xl contact-info__icon"></i>
+              </a>
+
+              <a href="https://github.com/Mohamed-khaled-mohmamed/Mohamed-khaled-mohamed" class="contact-info__link ">
+                <i class="fa-brands fa-github fa-2xl contact-info__icon"></i>
+              </a>
+
+              <a href="mailto:moh27632190@gmail.com" class="contact-info__link ">
+                <i class="fa-solid fa-paper-plane fa-2xl contact-info__icon"></i>
+              </a>
+
+            </div>
+          </form>
+          <div class="contact-us__map">
+
+            <img src="imgs/map.png" alt="map-image" class="map_img">
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="footer">© 2024 by Mohamed khaled</footer>
+
+    </section>
+
+  </div>
+
+</body>
+
+</html>

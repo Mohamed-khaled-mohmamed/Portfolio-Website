@@ -1,0 +1,67 @@
+@import '../variables';
+@import '../mixins';
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+}
+
+
+
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.toggle__title {
+  font-weight: var(--font-weight-medium);
+}
+
+.toggle__checkbox {
+  display: none;
+}
+
+.toggle__label {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  padding: 0.2rem;
+  border-radius: 1.5rem;
+  width: 4rem;
+  height: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.toggle__label::after {
+  content: '';
+  position: absolute;
+  left: 0.3rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-background);
+  transition: all 0.3s ease 0s;
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+
+.toggle__checkbox:checked + .toggle__label::after {
+  background-color: var(--color-green);
+  transform: translateX(2rem);
+}

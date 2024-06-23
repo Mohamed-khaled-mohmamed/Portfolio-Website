@@ -1,0 +1,160 @@
+
+@import 'variables';
+@import 'mixins';
+
+.burger-menu__checkbox{
+  display: none;
+}
+
+@media (max-width: 1290px) {
+  html {
+    font-size: 40%;
+  }
+  body {
+    font-size: var(--font-size-24);
+  }
+  .bio__pic-content::after {
+    top: 6rem;
+  }
+}
+
+@media (max-width: 920px) {
+  html {
+    font-size: 30%;
+  }
+
+  body {
+    font-size: var(--font-size-24);
+  }
+  .bio__pic-content::after {
+    top: 6rem;
+  }
+}
+
+@media (max-width: 710px) {
+  html {
+    font-size: 15%;
+  }
+
+  body {
+    font-size: var(--font-size-38);
+  }
+
+
+  /* header section */
+
+  .header {
+    position: sticky;
+    top: 0;
+}
+  /* bio section */
+  .bio__pic-content::after {
+    height: 90%;
+    top: 12rem;
+  }
+
+  .bio {
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr;
+    row-gap: 15rem;
+  }
+
+  .bio__pic-content {
+    grid-row: 1;
+  }
+
+  .bio__objective {
+    font-size: var(--font-size-38);
+  }
+
+  .bio__links {
+    font-size: var(--font-size-38);
+  }
+
+  /* skills section */
+
+  .skills__list {
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* testimonial section */
+
+  .testimonial__card-container {
+    display: grid;
+    grid-template-columns: 200px;
+    gap: 15rem;
+  }
+
+  .testimonial__label,
+  .testimonial__move-label {
+    display: none;
+  }
+
+  .testimonial__card--1 {
+    margin-left: -7rem;
+  }
+  .testimonial__radio--2:checked ~ .testimonial__card--2 {
+    margin-right: -7rem;
+    scale: 1;
+  }
+  .testimonial__card--3 {
+    margin-left: -7rem;
+  }
+
+  .testimonial__text {
+    font-size: var(--font-size-38);
+  }
+
+  /* projects section */
+  .projects--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*contact-us section */
+  .contact-us__information {
+    grid-template-columns: 1fr;
+    grid-template-rows: 270px 1fr;
+    border-radius: 6rem 6rem 6rem 6rem;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding-left: 6rem;
+    border-radius: 6rem 6rem 0 0rem;
+  }
+
+  .contact-info__icon {
+    font-size: 8rem;
+    padding-left: 7rem;
+  }
+
+  .contact-us__form {
+    grid-row: 2;
+    border-radius: 0 0rem 6rem 6rem;
+  }
+
+  .contact-us__map {
+    width: 66rem;
+    top: -156px;
+    left: 25rem;
+  }
+
+  .contact-form__form {
+    padding-left: 0;
+  }
+
+  .contact-us__form {
+    padding: 9rem 9rem 10rem 9rem;
+  }
+
+  .contact-us__links {
+    padding-top: 5rem;
+    column-gap: 4rem;
+    padding-right: 6rem;
+  }
+
+}

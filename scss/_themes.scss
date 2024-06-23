@@ -1,0 +1,38 @@
+@import 'variables';
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+  overflow-x: hidden;
+}
+
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#media:target) .navigation__media,
+.container:has(#testimonial:target) .navigation__testimonial,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#contact-us:target) .navigation__contact-us {
+  color: var(--color-gray-quote);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+}
+
+html:has(.toggle__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-white-image: var(--color-green);
+  --color-background-gradient-whit: var(--color-background-gradient-black);
+  --color-background-gradient-whit-cotact: var(--color-background-gradient-black);
+  --color-background-gradient-whit-light: var(--color-background-gradient-gree-light);
+  --color-background-gradient-whit-dark: var(--color-background-gradient-gree-dark);
+  --color-gray-quote: #00ffe5;
+  --color-shadow-light: var(--color-shadow-dark);
+  --color-grey-hover: #0bceba;
+  --color-gray-green-light: var(--color-gray-green-dark);
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-green);
+  --color-link-bg: var(--color-green);
+  --color-grey: #080808;
+  --color-input-border: var(--color-white);
+}
+
